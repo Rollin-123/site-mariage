@@ -1,0 +1,387 @@
+@use '../util' as *;
+.banner {
+    //  position: absolute;
+    //  top: 0;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    &__image {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        width: 100%;
+        gap: 0.1rem;
+        height: 100vh;
+
+        :nth-child(1) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid1.png);
+        }
+        :nth-child(2) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid2.png);
+        }
+        :nth-child(3) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid3.png);
+        }
+        :nth-child(4) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid4.png);
+        }
+        :nth-child(5) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid5.png);
+        }
+        :nth-child(6) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid6.png);
+        }
+        :nth-child(7) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid7.png);
+        }
+        :nth-child(8) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid8.png);
+        }
+        :nth-child(9) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid9.png);
+        }
+        :nth-child(10) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid10.png);
+        }
+        :nth-child(11) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid11.png);
+        }
+        :nth-child(12) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid12.png);
+        }
+        :nth-child(13) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid13.png);
+        }
+        :nth-child(14) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid14.png);
+        }
+        :nth-child(15) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid15.png);
+        }
+        :nth-child(16) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid16.png);
+        }
+        :nth-child(17) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid17.png);
+        }
+        :nth-child(18) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid18.png);
+        }
+        :nth-child(19) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid19.png);
+        }
+        :nth-child(20) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid20.png);
+        }
+        :nth-child(21) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid21.png);
+        }
+        :nth-child(22) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid22.png);
+        }
+        :nth-child(23) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid23.png);
+        }
+        :nth-child(24) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid24.png);
+        }
+        :nth-child(25) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid25.png);
+        }
+        :nth-child(26) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid26.png);
+        }
+        :nth-child(27) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid27.png);
+        }
+        :nth-child(28) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid28.png);
+        }
+        :nth-child(29) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid29.png);
+        }
+        :nth-child(30) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid30.png);
+        }
+        :nth-child(31) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid31.png);
+        }
+        :nth-child(32) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid32.png);
+        }
+        :nth-child(33) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid33.png);
+        }
+        :nth-child(34) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid34.png);
+        }
+        :nth-child(35) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid35.png);
+        }
+        :nth-child(36) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid36.png);
+        }
+        :nth-child(37) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid37.png);
+        }
+        :nth-child(38) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid38.png);
+        }
+        :nth-child(39) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid39.png);
+        }
+        :nth-child(40) {
+            background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077188/mariage/banner/grid40.png);
+        }
+
+        .banner__image__elt {
+            background-size: cover;
+            background-position: right;
+            background-repeat: no-repeat;
+        }
+    }
+    &__playbtn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        @include breakpoint-down(xsmall) {
+            width: 3rem;
+        }
+        @include breakpoint-down(extrasmall) {
+            width: 2.5rem;
+        }
+    }
+    &__text {
+        display: none;
+    }
+}
+.banner.show {
+    // background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077205/mariage/banner/bannerimg.png);
+    z-index: 500;
+    width: 100%;
+    height: 100vh;
+
+    //  :nth-child(37){
+    //     grid-column: 5/6;
+    //     grid-row: 1/2;
+    //  }
+    //  :nth-child(2){
+    //     grid-column: 6/7;
+    //     grid-row: 1/2;
+    //  }
+    //  :nth-child(11){
+    //     grid-column: 5/6;
+    //     grid-row: 2/3;
+    //  }
+    //  :nth-child(30){
+    //     grid-column: 6/7;
+    //     grid-row: 2/3;
+    //  }
+    //  :nth-child(17){
+    //     grid-column: 5/6;
+    //     grid-row: 3/4;
+    //  }
+    //  :nth-child(28){
+    //     grid-column: 6/7;
+    //     grid-row: 3/4;
+    //  }
+    //  :nth-child(10){
+    //     grid-column: 5/6;
+    //     grid-row: 4/5;
+    //  }
+    //  :nth-child(14){
+    //     grid-column: 6/7;
+    //     grid-row: 4/5;
+    //  }
+    //  :nth-child(24){
+    //     grid-column: 5/6;
+    //     grid-row: 5/6;
+    //  }
+    //  :nth-child(13){
+    //     grid-column: 8/9;
+    //     grid-row: 1/2;
+    //  }
+    //  :nth-child(15){
+    //     grid-column: 3/4;
+    //     grid-row: 1/2;
+    //  }
+    //  :nth-child(36){
+    //     grid-column: 4/5;
+    //     grid-row: 1/2;
+    //  }
+    //  :nth-child(8){
+    //     grid-column: 3/4;
+    //     grid-row: 2/3;
+    //  }
+    //  :nth-child(1){
+    //     grid-column: 2/3;
+    //     grid-row: 3/4;
+    //  }
+    //  :nth-child(9){
+    //     grid-column: 2/3;
+    //     grid-row: 2/3;
+    //  }
+    //  :nth-child(27){
+    //     grid-column: 2/3;
+    //     grid-row: 5/6;
+    //  }
+
+    //  :nth-child(33){
+    //     grid-column:3/4;
+    //     grid-row: 4/5;
+    //  }
+    //  :nth-child(40){
+    //     grid-column: 4/5;
+    //     grid-row: 3/4;
+    //  }
+    //  :nth-child(31){
+    //     grid-column: 4/5;
+    //     grid-row: 4/5;
+    //  }
+    //  :nth-child(4){
+    //     grid-column: 4/5;
+    //     grid-row:5/6;
+    //  }
+    //  :nth-child(34){
+    //     grid-column: 1/2;
+    //     grid-row: 5/6;
+    //  }
+    //  :nth-child(35){
+    //     grid-column: 3/4;
+    //     grid-row: 5/6;
+    //  }
+    //   :nth-child(19){
+    //     grid-column: 3/4;
+    //     grid-row: 3/4;
+    //  }
+    //  :nth-child(26){
+    //     grid-row: 4/5;
+    //     grid-column: 2/3;
+    //  }
+    //   :nth-child(38){
+    //     grid-column: 6/7;
+    //     grid-row: 5/6;
+    //  }
+    //  :nth-child(23){
+    //     grid-column: 7/8;
+    //     grid-row: 3/4;
+    //  }
+    //  :nth-child(16){
+    //     grid-column: 8/9;
+    //     grid-row: 2/3;
+    //  }
+    //  :nth-child(5){
+    //     grid-column: 7/8;
+    //     grid-row: 5/6;
+    //  }
+    //   :nth-child(22){
+    //     grid-column: 7/8;
+    //     grid-row: 4/5;
+    //  }
+    //  :nth-child(12){
+    //     grid-column: 4/5;
+    //     grid-row: 2/3;
+    //   }
+    //   :nth-child(21){
+    //     grid-column:1/2;
+    //     grid-row: 3/4;
+    //   }
+    //   :nth-child(25){
+    //     grid-column: 1/2;
+    //     grid-row: 4/5;
+    //   }
+    //   :nth-child(20){
+    //     grid-column: 8/9;
+    //     grid-row: 5/6;
+    //   }
+    //   :nth-child(3){
+    //     grid-column: 7/8;
+    //     grid-row: 2/3;
+    //   }
+    //   :nth-child(6){
+    //     grid-column: 2/3;
+    //     grid-row: 1/2;
+    //   }
+    //   :nth-child(18){
+    //     grid-column: 1/2;
+    //     grid-row: 1/2;
+    //   }
+    //   :nth-child(39){
+    //     grid-column: 7/8;
+    //     grid-row: 1/2;
+    //   }
+    //   :nth-child(7){
+    //     grid-column: 8/9;
+    //     grid-row: 3/4;
+    //   }
+
+    .banner__image.show {
+        gap: 0;
+        overflow: hidden;
+        background: url(https://res.cloudinary.com/digital-x-sarl/image/upload/v1665077205/mariage/banner/bannerimg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .show > div {
+        opacity: 1;
+    }
+
+    .banner__playbtn {
+        display: none;
+    }
+    .banner__text {
+        display: block;
+        position: absolute;
+        top: 60%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        left: 50%;
+        font-family: 'STIX Two Text';
+        font-style: normal;
+        text-align: center;
+
+        :nth-child(1) {
+            font-weight: 400;
+            font-size: rem(28);
+            //line-height: rem(35);
+            letter-spacing: 0.26em;
+            @include breakpoint-down(xsmall) {
+                font-size: 1.5rem;
+            }
+            @include breakpoint-down(mobile) {
+                font-size: rem(12);
+            }
+        }
+
+        :nth-child(2) {
+            font-weight: 400;
+            font-size: rem(64);
+            @include breakpoint-down(xsmall) {
+                font-size: 2.4rem;
+            }
+            @include breakpoint-down(mobile) {
+               font-size: 1.8rem;
+           }
+        }
+        :nth-child(3) {
+            font-weight: 400;
+            font-size: rem(20);
+            //line-height: rem(25);
+            letter-spacing: 0.26em;
+            @include breakpoint-down(xsmall) {
+                font-size: 1rem;
+            }
+            @include breakpoint-down(mobile){
+                font-size: rem(10);
+            }
+        }
+    }
+    .banner__text p {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,171 @@
+@use '../util' as *;
+
+.histoire{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    gap: rem(28);
+    padding-top: 3rem;
+
+
+    &_book__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
+        min-width: rem(250);
+        max-width: rem(400);
+        height: rem(480);
+        position: relative;
+        perspective: rem(10000);
+        transition: 1s;
+        @include breakpoint-down(xsmall){
+            perspective: rem(1000);
+            max-width: rem(704);
+            width: 100%;
+            height: rem(640);
+        }
+        .book{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: 1s;
+            transform-style: preserve-3d;
+            transform-origin: left;
+            @include breakpoint-down(xsmall){
+                width: 95%;
+                transform-origin: bottom;
+            }
+            .face-front, .face-back{
+                display: grid;
+                width: 100%;
+                height: 100%;
+                padding: rem(16);
+                box-sizing: border-box;
+                overflow: hidden;
+                cursor: pointer;
+                background-color: var(--white);
+                h1{
+                    text-align: center;
+                    align-self: center;
+                    @include breakpoint-down(xsmall){
+                        font-size: rem(13);
+                    }
+                }
+                .page{
+                    gap: rem(10);
+                    height: min-content;
+                    .img{
+                        @include breakpoint-down(xsmall){
+                            width: 50%;
+                            height: 50%;
+                        }
+                        img{
+                            @include breakpoint-down(xsmall){
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                p{
+                    margin: 0;
+                    font-size: rem(11);
+                    height: min-content;
+                    text-align: justify;
+                    @include breakpoint-down(xsmall){
+                        font-size: rem(12);
+                    }
+                }
+                @include breakpoint-down(xsmall){
+                    padding: rem(16) rem(35);
+                }
+            }
+            .face-front{
+                box-shadow: inset rem(3) 0 rem(20) rem(-7) var(--black);
+                border-top-right-radius: rem(3);
+                border-bottom-right-radius: rem(3);
+                // background-color: var(--grayLight);
+                .btn-next{
+                    justify-self: end;
+                    align-self: end;
+                    cursor: default;
+                    @include breakpoint-down(xsmall){
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+            .face-back{
+                // background-color: var(--grayDark);
+                position: absolute;    
+                top: 0;
+                left: 0;
+                box-shadow: inset rem(3) 0 rem(20) rem(-7) var(--black);
+                transform: translateZ(-1px) rotateY(180deg);
+                border-top-left-radius: rem(3);
+                border-bottom-left-radius: rem(3);
+                .btn-next{
+                    display: none;
+                    @include breakpoint-down(xsmall){
+                        display: block;
+                        align-self: end;
+                        justify-self: end;
+                    }
+                }
+                .btn-back{
+                    align-self: end;
+                    @include breakpoint-down(xsmall){
+                        display: none;
+                    }
+                }
+            }
+            #portada{
+                background-image: url('https://res.cloudinary.com/digital-x-sarl/image/upload/v1665565970/mariage/sans%20image/home.png');
+            }
+            #portada-back{
+                background-image: url('https://res.cloudinary.com/digital-x-sarl/image/upload/v1665565969/mariage/sans%20image/end.png');
+            }
+            #portada, #portada-back{
+                background-position: center;
+                background-repeat: no-repeat;
+                margin: 0;
+                padding: 0;
+                @include breakpoint-down(xsmall){
+                background-size: cover;    
+                }
+            }
+        }
+    }
+    h3{
+        font-weight: 300;
+        font-size: rem(14);
+        line-height: rem(17);
+        letter-spacing: 0.37rem;
+        @include breakpoint-down(xsmall){
+            letter-spacing: rem(2);
+        }
+        @include breakpoint-down(extrasmall){
+            letter-spacing: rem(0);
+        }
+    }
+}
+.sliders{margin-left: rem(1000);}
+.reset{
+
+}
+.trnsf-reset{
+    transform: translateX(rem(0));
+}
+.trnsf{
+        transform: translateX(rem(194));
+    @include breakpoint-down(medium){
+        transform: translateX(rem(198));
+    }
+    @include breakpoint-down(xsmall){
+        transform: translateX(rem(0));
+    }
+}

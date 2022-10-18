@@ -1,0 +1,23 @@
+@use '../util' as *;
+
+.container {
+	padding: 0 rem(24);
+	max-width: rem(1110);
+	margin: 0 auto;
+
+	@include breakpoint(large) {
+		padding: 0;
+		transform: translate(0, 0);
+	}
+}
+.containers,.conteneur{
+	padding: 0 rem(140) ;
+	max-width: rem(1400);
+	margin: 0 auto;
+	@include breakpoint-down(tablet) {
+		padding: 0 rem(50) ;
+	}
+	@include breakpoint-down(small){
+		padding: 0 rem(20);
+	}
+}

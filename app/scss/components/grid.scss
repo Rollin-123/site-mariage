@@ -1,0 +1,13 @@
+@use '../util' as *;
+
+.grid_1__cols{
+    display: grid;
+}
+
+.grid_2__cols{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    @include breakpoint-down(xsmall){
+        grid-template-columns: 1fr;
+    }
+}

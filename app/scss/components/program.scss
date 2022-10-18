@@ -1,0 +1,188 @@
+@use '../util' as *;
+.programme {
+    padding-top: 3rem;
+    
+
+    &__bloc1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        @include breakpoint-down(small) {
+            grid-template-columns: 1fr;
+         }
+
+        &__slider {
+            position: relative;
+            align-self: center;
+
+            @include breakpoint-down(small) {
+               display: none;
+            }
+
+            .slide {
+                display: none;
+                z-index: 1;
+               // position: absolute;
+                //transform: translateX(-2000px);
+                overflow: hidden;
+            }
+
+            // .slide.active {
+            //     transform: translateX(0);
+            //     transition: 1s;
+            // }
+            .slide img {
+                z-index: 1;
+                width: 100%;
+            }
+            .fades {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+            @-webkit-keyframes fade {
+                from {
+                    opacity: 0.4;
+                    transform: translateX(-2000px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+            @keyframes fade {
+                from {
+                    opacity: 0.4;
+                    transform: translateX(-2000px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+            
+            .navigation {
+                z-index: 2;
+                display: none;
+                position: absolute;
+                display: flex;
+                bottom: rem(30);
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .navigation .manualbtn {
+                display: none;
+                background: #d9d9d9;
+                width: rem(12);
+                height: rem(12);
+                margin: rem(10);
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .navigation .manualbtn.active {
+                background: #f07667;
+                box-shadow: 0 0 rem(2) rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        &__text {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            height: 80vh;
+            overflow-y: scroll;
+            padding: 1rem 0.5rem 0 0;
+            align-self: center;
+
+            @include breakpoint-down(tablet) {
+                height: 60vh;
+            }
+            @include breakpoint-down(small) {
+                overflow-y: auto;
+                height: auto;
+             }
+            
+
+        }
+        
+        ::-webkit-scrollbar {
+            width: 0.2rem;
+            background-color: rgba(128, 128, 128, 0.411);
+            border-radius: 0.5rem;
+            cursor: pointer;
+            
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color:#f07667;
+            border-radius: 0.5rem;
+            cursor: pointer;
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        &__date {
+            display: flex;
+            gap: 1rem;
+            @include breakpoint-down(extrasmall){
+                gap: 0.3rem;
+            }
+
+            :nth-child(2) {
+                width: 30%;
+                height: 0.05rem;
+                background-color: var(--black);
+                align-self: center;
+                margin-top: 0.5rem;
+            }
+        }
+        &__activity {
+            display: grid;
+            grid-template-columns: 0.5fr 1fr;
+
+            @include breakpoint-down(extrasmall){
+                grid-template-columns: 0.9fr 1fr;
+            }
+        }
+        &__event p {
+            padding-bottom: 0.8rem;
+        }
+
+        &__text__slider{
+            display: none;
+
+            @include breakpoint-down(small) {
+                display: block;
+             }
+        }
+        &__text__slider .slide{
+            display: none;
+        }
+        &__text__slider .slide img{
+            width: 100%;
+        }
+    }
+}
+.programme__paragraph,
+.programme__paragraph--bold {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: rem(13);
+    text-align: justify;
+}
+.programme__paragraph--bold {
+    font-weight: 700;
+}
+.programme__title {
+    font-family: 'Stalemate';
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(64);
+    text-align: center;
+
+    color: --black;
+}

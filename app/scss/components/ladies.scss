@@ -1,0 +1,73 @@
+@use '../util' as *;
+
+.ladies{
+    //margin-top: rem(15);
+    padding-top: 3rem;
+
+    &_text{
+        text-align: center;
+        margin-bottom: rem(16);
+        h3{
+            font-family: var(--font-stat);
+            font-size: rem(48);
+        }
+    }
+    &_grid{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        justify-content: center;
+        gap: rem(10);
+        @include breakpoint-down(small){
+            grid-template-columns: repeat(3,1fr);
+        }
+        &__container{
+            height: 79vmin;
+            max-height: 45vmax;
+            overflow: hidden;
+            @include breakpoint(small){
+                max-height: 80vw;
+            }
+            @include breakpoint(medium){
+                max-height: 25vw;
+            }
+            @include breakpoint(xmedium){
+                max-height: 30vw;
+            }
+            @include breakpoint(xtablet){
+                max-height: 34vw;
+            }
+            @include breakpoint(xlarge){
+                max-height: 38vw;
+            }
+            @include breakpoint(extralarge){
+                max-height: 43vw;
+            }
+            .img-container{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                img{width: 100%;}
+            }
+            .const1{animation: slide 16.5s infinite;}
+            .const2{animation: slide 16s infinite;}
+            .const3{animation: slide 15.5s infinite;}
+            .const4{animation: slide 15s infinite;}
+            .const5{animation: slide 14.5s infinite;}
+            .const6{animation: slide 14s infinite;}
+        }
+    }
+}
+@keyframes slide{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    55%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(-50%);
+    }
+}
