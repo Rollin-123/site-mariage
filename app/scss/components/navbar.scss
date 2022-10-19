@@ -3,26 +3,21 @@
 .navbar{
     overflow: hidden;
     z-index: 1000;
-    //position: relative;
     position: fixed;
     &_menu{
         height: rem(50);
         width: rem(50);
+        padding-left: 0.3rem;
         position: relative;
         transition: .4s ease;
 
         &__togglebox{
             position: relative;
             display: block;
-            //margin-left: rem(52);
-            padding-left: rem(52);
             height: rem(50);
             width: rem(50);
             border-radius: rem(50);
-            @include breakpoint-down(extrasmall){
-                padding-left: 1.25rem;
-                width: rem(40);
-            }
+            cursor: pointer;
 
             .logo{
                 position: absolute;
@@ -100,13 +95,5 @@
         height: 100vh;
         width: 100%;
         background-color: var(--white);
-        // @include breakpoint-down(xsmall){
-        //     width: 50%;
-        //     // padding-bottom: rem(140);
-        //     height: auto;
-        // }
-        // @include breakpoint-down(extrasmall){
-        //     width: 100%;
-        // }
     }
 }

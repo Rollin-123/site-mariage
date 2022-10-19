@@ -20,29 +20,33 @@ rel="stylesheet"
 </head>
 <body>
     <section class="navbar">
-        <div class="navbar_menu">
-            <a href="#" class="navbar_menu__togglebox">
-                <span class="logo"></span>
-            </a>
-
-            <div class="navbar_menu__profil">
-                <div class="logo">
-                    <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1665068347/mariage/logo/logo.png" alt="">
+        <div class="navbar_fixe">
+            <div class="navbar_menu">
+                <a class="navbar_menu__togglebox">
+                    <span class="logo"></span>
+                </a>
+    
+                <div class="navbar_menu__profil">
+                    <div class="logo">
+                        <img src="https://res.cloudinary.com/digital-x-sarl/image/upload/v1665068347/mariage/logo/logo.png" alt="">
+                    </div>
+                    <h3>David & Laurra</h3>
                 </div>
-                <h3>David & Laurra</h3>
-            </div>
+    
+                <ul class="navbar_menu__items">
+                    <li><a href="#Home"><span class="item">Home Page</span></a></li>
+                    <li><a href="#histoire"><span>Notre Histoire</span></a></li>
+                    <li><a href="#Programme"><span>Programme</span></a></li>
+                    <li><a href="#Ladies"><span>Ladies & Gentlemen</span></a></li>
+                    <li><a href="#Cadeau"><span>Cadeau et reservation</span></a></li>
+                    <li><a href="tel:+237 680974148"><span>Tel: +237 680974148</span></a></li>
+                </ul>
 
-            <ul class="navbar_menu__items">
-                <li><a href="#"><span class="item">Mes Clients</span></a></li>
-                <li><a href="#"><span>Historique de payement</span></a></li>
-                <li><a href="#"><span>Facture Payer / Non payer</span></a></li>
-                <li><a href="#"><span>Relance Client</span></a></li>
-                <li><a href="#"><span>Gestion de client</span></a></li>
-            </ul>
+            </div>
         </div>
     </section>
     <main>
-        <section class="banner">
+        <section class="banner" id="Home">
          <div class="banner__image">
             <div class="banner__image__elt"></div>
             <div class="banner__image__elt"></div>
@@ -93,7 +97,7 @@ rel="stylesheet"
          </div>
         </section>
        
-        <section class="histoire" id="histoire">
+        <section class="histoire containers" id="histoire">
             <h1>NOTRE HISTOIRE</h1>
             <div class="histoire_book__content container">
                 
@@ -166,7 +170,7 @@ rel="stylesheet"
             <h3>This is how all started and we are happy today</h3>
         </section>
 
-        <section class="programme conteneur">
+        <section class="programme conteneur" id="Programme">
             <div class="programme__bloc1">
                 <div class="programme__bloc1__slider">
                     <div class="slide fades">
@@ -349,7 +353,7 @@ rel="stylesheet"
             </div>
         </section>
 
-        <section class="ladies">
+        <section class="ladies" id="Ladies">
             <div class="ladies_text">
                 <h3>Nos ladies et gent</h3>
             </div>
@@ -395,7 +399,7 @@ rel="stylesheet"
         
         </section>
 
-        <section class="registre">
+        <section class="registre" id="Cadeau">
 
             <div class="registre_text">
                 <h3>Registres des cadeaux</h3>
